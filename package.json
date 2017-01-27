@@ -6,12 +6,13 @@
   "dependencies": {
     "body-parser": "^1.16.0",
     "express": "^4.14.0",
+    "nightmare": "^2.9.1",
     "request": "^2.79.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildFront": "cd public && npm run tsc",	 
+    "buildFront": "cd public && npm run tsc",
     "start:q": "node server.js",
     "postinstall": "cd public && npm install",
     "start": "npm run buildFront && node server.js"
