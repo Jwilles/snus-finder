@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
 				this.store = resStore;
 				console.log(this.store);
 				
-				this.origin = { longitude: -76.51625633239746, latitude: 44.236774870223 };  // its a example aleatory position
+				this.origin = { longitude: position.coords.longitude, latitude: position.coords.latitude };  // its a example aleatory position
 				this.destination = resStore.storeAddress;  // its a example aleatory position
 			});
 		

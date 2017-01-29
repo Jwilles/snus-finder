@@ -34,7 +34,7 @@ module.exports = function (loc) {
    			})
   			.end()
 			.then(function (store) {
-    				console.log(store);
+    			//	console.log(store);
 				resolve(store);
   			})
   			.catch(function (error) {
