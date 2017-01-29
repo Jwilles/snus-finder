@@ -2,21 +2,29 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
+import { DirectionsMapDirective } from './directives/directions.directive';
 
-import { WeatherService}  from './services/weather.service';
+
+import { AgmCoreModule } from 'angular2-google-maps/core/core-module';
+import { SnusService}  from './services/snus.service';
+
 
 import 'rxjs/add/operator/map';
 
 @NgModule({
 	imports: [ 
 	BrowserModule,
-	HttpModule
+	HttpModule,
+	AgmCoreModule.forRoot({
+			apiKey: 'AIzaSyD7dR3nH2OZBdFrwmU6AFLQCGttEwhaxjY'
+		})
 	 ],
 	declarations: [ 
-	AppComponent 
+	AppComponent,
+	DirectionsMapDirective 
 	],
 	providers: [
-	WeatherService
+	SnusService
 	],
 	bootstrap: [ AppComponent ]
 })

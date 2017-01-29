@@ -1,13 +1,14 @@
 // routes.js
 
-var getWeather = require('./weather');
+var getSnus = require('./snus-nightmare');
 
 module.exports = function(app) {
 	
-	app.get('/weather/:lat/:lon', (req, res) => {
-		getWeather(req.params).then((weather) => {
+	app.get('/snus/:lat/:lon', (req, res) => {
+		getSnus(req.params).then((store) => {
 		//	console.log(weather);
-			res.send(weather);
+		//	var closestStore = {url: store};
+			res.json(store);
 		}, (e) =>  {
 			res.send(e);
 		});
