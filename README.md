@@ -1,8 +1,15 @@
-## Install
+## Snus App
 
-To install run "npm install" from the root directory
+A fun project for a friend that finds the closest US snus retailer and provides you with walking directions using a combination of NightmareJS and Google Maps API
 
-## Run 
+You can find this app deployed via Digital Ocean at https://findmesnus.io
 
-After install simply run the app with "npm start" from the root directory
+## Usage
+
+1. Clone the repo
+
+2. Install the app with the command "npm install" from the outer directory
+
+3. Run the app with the command "npm start" from the outer directory
+
 
