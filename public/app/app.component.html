@@ -7,10 +7,11 @@
 		<h3 class="text-center">Your closest snus retailer is: {{store.storeName}}</h3>
 	</div>
 		
-	<sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-		<sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>
-	</sebm-google-map>	
-		
+	<div class="well">
+		<sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+			<sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>
+		</sebm-google-map>	
+	</div>	
 	<footer class="text-center">
 			<a href={{store.storeUrl}}>
 				<input type="button" class="btn btn-link" value="Open with Google Maps"/>
