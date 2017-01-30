@@ -10,6 +10,7 @@ module.exports = function(app) {
 		//	var closestStore = {url: store};
 			res.json(store);
 		}, (e) =>  {
+		//	console.log(e)
 			res.send(e);
 		});
 		

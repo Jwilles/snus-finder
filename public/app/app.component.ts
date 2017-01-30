@@ -5,62 +5,37 @@ import { SnusService } from './services/snus.service';
 
 @Component({
 	selector: 'my-app',
-	template: `
-		<header>
-			<div class="page-header">
-				<h2>Where's the snus?</h2>	
-			</div>
-		</header>
-		<div class="jumbotron" >
-			<h3 class="text-center">Your closest snus retailer is: {{store.storeName}}</h3>
-		</div>
-		
-			<sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-  				<!--<sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker> -->
-				<sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>
-			</sebm-google-map>	
-		<footer class="text-center">
-			<a href={{store.storeUrl}}>
-				<input type="button" class="btn btn-link" value="Open with Google Maps"/>
-			</a>
-		</footer>
-		
-	`,
-	//styleUrls: ['app.component.css']
-	styles: [`
-		.jumbotron {box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
-		.sebm-google-map-container {
-  			height: 300px;
-			}
-	`]
+	templateUrl: './app/app.component.html',
+	styleUrls: ['./app/app.component.css']
 })
 
 export class AppComponent implements OnInit {
  	
 	constructor(private service: SnusService) {}
 
-	origin = {};  
-	destination = {}; 
+	origin = { lng: 0, lat: 0 };  
+	destination = ""; 
 		
  	lat: number = 37.08;
   	lng: number = -95.71;	
 	zoom: number = 3;
-	geoLoc = {};  
-	store = {
-		storeName: 'Loading...'
-		};
+
+	store = { storeName: 'loading...' };
+
 	setPosition(position){
-		this.service.getSnus(position.coords).subscribe(resStore => {
+		this.service.getSnus(position.coords).subscribe(
+			resStore => {
 				this.store = resStore;
 				console.log(this.store);
 				
-				this.origin = { longitude: position.coords.longitude, latitude: position.coords.latitude };  // its a example aleatory position
-				this.destination = resStore.storeAddress;  // its a example aleatory position
+				this.origin = { lng: position.coords.longitude, lat: position.coords.latitude }; 
+				this.destination = resStore.storeAddress; 
+			},
+			err => {
+				window.alert('Search failed. Please make sure you are within the United States');
+				//console.log(err)				
 			});
 		
-			
-		
-		this.geoLoc = position.coords;
       		console.log(position.coords);
       	}
 
