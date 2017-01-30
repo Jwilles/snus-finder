@@ -16,7 +16,7 @@ import 'rxjs/add/operator/map';
 	BrowserModule,
 	HttpModule,
 	AgmCoreModule.forRoot({
-			apiKey: 'AIzaSyD7dR3nH2OZBdFrwmU6AFLQCGttEwhaxjY'
+			apiKey: 'AIzaSyD7dR3nH2OZBdFrwmU6AFLQCGttEwhaxjY' 
 		})
 	 ],
 	declarations: [ 
