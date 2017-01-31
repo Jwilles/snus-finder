@@ -4,7 +4,6 @@
     "script"      : "server.js",
     "env": {
       "DISPLAY": ":99",
-      "KEY": "AIzaSyD7dR3nH2OZBdFrwmU6AFLQCGttEwhaxjY"	 
     }
   },
     {
