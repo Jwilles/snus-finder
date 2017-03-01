@@ -1,0 +1,15 @@
+{
+  "apps" : [{
+    "name"        : "snus-finder",
+    "script"      : "server.js",
+    "env": {
+      "DISPLAY": ":99",
+    }
+  },
+    {
+      "name"        : "Xvfb",
+      "interpreter" : "none",
+      "script"      : "Xvfb",
+      "args"        : ":99"
+    }]
+}

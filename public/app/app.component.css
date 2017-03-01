@@ -1,5 +1,6 @@
 .jumbotron {box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
 
+<<<<<<< HEAD
 h3, h4 {
 	color: rgb(236, 240, 241);
 	/*
@@ -15,5 +16,32 @@ h3, h4 {
 .sebm-google-map-container {
  	height: 70vh;
 }
+=======
+
+
+/*
+.well {
+        position: relative;
+        padding-bottom: 90%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+*/
+
+/*
+.well .sebm-google-map-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+*/
+
+.sebm-google-map-container {
+        height: 400px;
+    }
+
+>>>>>>> 2fd0de4296769c1654b4cd7490af0d392bb69ddf
 
 
