@@ -3,4 +3,3 @@ public/node_modules/
 public/dist/
 snus-scrape/
 .env
-process.json

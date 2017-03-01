@@ -1,6 +1,28 @@
 .jumbotron {box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
 
+
+
+/*
+.well {
+        position: relative;
+        padding-bottom: 90%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+*/
+
+/*
+.well .sebm-google-map-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+*/
+
 .sebm-google-map-container {
- 	height: 350px;
-}
+        height: 400px;
+    }
+
 
