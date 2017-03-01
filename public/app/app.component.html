@@ -1,12 +1,15 @@
 <header>
 	<div class="page-header">
-		<h2>Where's the snus?</h2>	
+		<h3>Where's the snus?</h3>	
+		<h4 class="text-center">Your closest retailer is: {{store.storeName}}</h4>
+
 	</div>
 </header>
+	<!--	
 	<div class="jumbotron" >
-		<h3 class="text-center">Your closest snus retailer is: {{store.storeName}}</h3>
+		<h4 class="text-center">Your closest retailer is: {{store.storeName}}</h4>
 	</div>
-		
+	-->	
 	<div class="well">
 		<sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
 			<sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>

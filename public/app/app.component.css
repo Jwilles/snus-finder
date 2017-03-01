@@ -1,6 +1,19 @@
 .jumbotron {box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
 
-.sebm-google-map-container {
- 	height: 350px;
+h3, h4 {
+	color: rgb(236, 240, 241);
+	/*
+	color: rgb(149, 165, 166);
+	*/
 }
+
+
+.btn-link {
+	color rgb(236, 240, 241);
+}
+
+.sebm-google-map-container {
+ 	height: 70vh;
+}
+
 
