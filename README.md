@@ -1,6 +1,6 @@
 ## Snus App
 
-A fun project for a friend that finds the closest US snus retailer and provides you with walking directions using a combination of NightmareJS and Google Maps API
+A fun project for a friend that locates the closest U.S. snus retailer and provides you with walking directions using a combination of NightmareJS and Google Maps API
 
 You can find this app deployed via Digital Ocean at https://findmesnus.io
 
