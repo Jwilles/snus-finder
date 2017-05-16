@@ -8,8 +8,13 @@ h3, h4 {
 }
 
 
+.well {
+  background: transparent;
+  border: none;
+}
+
 .btn-link {
-	color rgb(236, 240, 241);
+	color: rgb(236, 240, 241);
 }
 
 .sebm-google-map-container {

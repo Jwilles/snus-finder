@@ -19,7 +19,7 @@ module.exports = function (loc) {
 			//.type('form[action*="/m/find"] [name = location]', testLoc.lat + ' ' + testLoc.lon)
 			.type('form[action*="/m/find"] [name = location]', loc.lat + ' ' + loc.lon)
 			.click('form[action*="/m/find"] [id=btnMapIt]')
-  			.wait(5000)
+  			.wait(1000)
   			.evaluate(function () {
 				var selector = '#findArea > div > div:nth-child(1) > a:nth-child(1)'
    				//var selectorName = '#findArea > div > div:nth-child(1) > a:nth-child(1) > b'
