@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
 			},
 			err => {
 				window.alert('Search failed. Please make sure you are within the United States');
-				//console.log(err)				
+				console.log(err)				
 			});
 		
       		console.log(position.coords);

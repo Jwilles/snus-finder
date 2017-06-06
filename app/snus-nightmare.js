@@ -7,8 +7,8 @@ var Nightmare = require('nightmare');
 module.exports = function (loc) {
 
 //	testLoc = {
-//		lat: 34.08,
-//		lon: -118.44
+//		lat: 34.08022,
+//		lon: -120.44893
 //		}
 
 	return new Promise((resolve, reject) => {
@@ -16,12 +16,12 @@ module.exports = function (loc) {
 		
 		nightmare
 			.goto('https://generalsnus.com/m/find')
-			//.type('form[action*="/m/find"] [name = location]', testLoc.lat + ' ' + testLoc.lon)
-			.type('form[action*="/m/find"] [name = location]', loc.lat + ' ' + loc.lon)
+			.type('form[action*="/m/find"] [name = location]', testLoc.lat + ', ' + testLoc.lon)
+			//.type('form[action*="/m/find"] [name = location]', loc.lat + ', ' + loc.lon)
 			.click('form[action*="/m/find"] [id=btnMapIt]')
-  			.wait(1000)
+  			.wait(5000)
   			.evaluate(function () {
-				var selector = '#findArea > div > div:nth-child(1) > a:nth-child(1)'
+				var selector = '#findArea > div > div:nth-child(1) > a:nth-child(2)'
    				//var selectorName = '#findArea > div > div:nth-child(1) > a:nth-child(1) > b'
 				var closestStore = {};
 				var arr = [];
